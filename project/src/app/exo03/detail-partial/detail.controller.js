@@ -3,8 +3,13 @@
 
   function DetailCtrl($location) {
     var vm = this;
-   
-
+    vm.response=false;
+    vm.moncac= moncac;
+     
+     function moncac(){
+      vm.response = !vm.response;
+      
+    }
     
   }
 

@@ -4,6 +4,7 @@
   function Exo03Ctrl($location) {
     var vm = this;
     vm.selection= selection;
+   
     vm.films = [
       {name: 'Fast and Furious', img: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/AkSMd8AXSpA1L1SbBPc2AfVJfmE.jpg', year: 2001},
       {name: '2 Fast 2 Furious', img: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/u1Snfl40rXmAJNiMyZUczUyFVuf.jpg', year: 2003},
@@ -14,6 +15,8 @@
      vm.selectedElement = vm.films[index];
         
     }
+
+   
   }
  
 
