@@ -1,1 +1,6 @@
-<div ng-controller="DetailCtrl as detail"></div>
+<div ng-controller="DetailCtrl as detail">
+	<div ng-if="exo03.selectedElement">
+	<p>{{ exo03.selectedElement.name }}<p>
+	<p>{{ exo03.selectedElement.year }}</p>
+	</div>
+</div>
