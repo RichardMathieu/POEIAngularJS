@@ -1,7 +1,7 @@
 <div class="container">
 	<div id="listeFilms" >
 		<ul>
-			<li ng-repeat="film in exo03.films "><img src="{{film.img}}" class="img"><br><br></li>
+			<li ng-repeat="film in exo03.films "><img src="{{film.img}}" class="img" ng-click="exo03.selection($index)" ng-class="{ 'border-pink': exo03.selectedElement.name === film.name}">
 		</ul>
 	</div>
 	<div id="detailFilm">
