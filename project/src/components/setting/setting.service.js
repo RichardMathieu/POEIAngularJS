@@ -1,16 +1,17 @@
 (function() {
     'use strict';
   
-    function monService() {
-      var city='';
-      var isCelsius=true;
+    function settingService() {
+      var settingService = {};
+      settingService.city='Nantes';
+      settingService.isCelsius=true;
 
-      return service;
+      return  settingService;
     }
 
-    monService.$inject = [];
+    settingService.$inject = [];
     
     angular.module('daproject')
-        .factory('monService', monService);
+        .factory('settingService', settingService);
   
 })();
