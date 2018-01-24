@@ -3,7 +3,12 @@
 
   function Exo04Ctrl($location) {
     var vm = this;
-    
+    vm.mod = null;
+    vm.testMod = testMod;
+
+     function testMod($location) {
+      console.log(vm.mod)
+     }
   }
  
 
