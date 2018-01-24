@@ -26,6 +26,12 @@
         controller: 'Exo03Ctrl',
         controllerAs: 'exo03',
       })
+       $routeProvider
+      .when('/exo04', {
+        templateUrl: 'src/app/exo04/exo04.html',
+        controller: 'Exo04Ctrl',
+        controllerAs: 'exo04',
+      })
       .otherwise({redirectTo:'/'});
   }
 
