@@ -9,7 +9,7 @@
   }
  
 
-  MoreCtrl.$inject = ['$location'];
+  MoreCtrl.$inject = ['$location','meteo'];
 
   angular.module('daproject')
     .controller('MoreCtrl', MoreCtrl);
