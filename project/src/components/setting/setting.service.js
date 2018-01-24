@@ -3,7 +3,7 @@
   
     function settingService() {
       var settingService = {};
-      settingService.city='Nantes';
+      settingService.city='';
       settingService.isCelsius=true;
 
       return  settingService;

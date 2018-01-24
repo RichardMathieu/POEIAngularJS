@@ -1,5 +1,6 @@
 <div class="bout">
-	<input ng-model="exo04.mod" >
-	<button ng-click="exo04.testMod()">search</button>
+	<input ng-model="exo04.setting.city" >
+	<button ng-click="exo04.meteo.getMeteo()">search</button>
 </div>
-<div class="bout">{{exo04.setting.city}}</div>
+
+<div class="bout" ng-show="exo04.meteo.isSuccess"><img src="http://openweathermap.org/img/w/{{exo04.meteo.meteoListe[0].weather[0].icon}}.png">{{exo04.meteo.meteoListe[0].main.temp}}</div>
