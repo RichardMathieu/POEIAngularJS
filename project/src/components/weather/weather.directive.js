@@ -10,6 +10,7 @@
          meteoElement: '=',
           
         },
+        scope:{},
         controller: 'WeCtrl',
         controllerAs: 'weather'
       };
