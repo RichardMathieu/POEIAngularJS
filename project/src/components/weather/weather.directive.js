@@ -2,7 +2,7 @@
   'use strict';
 	
 	angular.module('daproject')
-    .directive('weatherDir', function() {
+    .directive('weather', function() {
       return {
         templateUrl: 'src/components/weather/weather.html',
         restrict: 'E',

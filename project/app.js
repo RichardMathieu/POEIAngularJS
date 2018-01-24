@@ -38,6 +38,7 @@
         controller: 'MoreCtrl',
         controllerAs: 'more',
       })
+      
       .otherwise({redirectTo:'/'});
   }
 

@@ -1,9 +1,9 @@
 (function() {
   'use strict';
 
-  function MoreCtrl($location) {
+  function MoreCtrl($location,meteo) {
     var vm = this;
-    
+    vm.meteo=meteo;
 
    
   }
