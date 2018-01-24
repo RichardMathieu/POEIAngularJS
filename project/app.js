@@ -32,6 +32,12 @@
         controller: 'Exo04Ctrl',
         controllerAs: 'exo04',
       })
+       $routeProvider
+      .when('/more', {
+        templateUrl: 'src/app/more/more.html',
+        controller: 'MoreCtrl',
+        controllerAs: 'more',
+      })
       .otherwise({redirectTo:'/'});
   }
 
