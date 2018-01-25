@@ -1,21 +1,22 @@
 (function() {
   'use strict';
 
-  function FinalCtrl($location,searchConfig) {
+  function FinalCtrl($location,searchConfig,cocktailSearch) {
     var vm = this;
     vm.boutton='';
     vm.buvons=buvons;
     vm.searchConfig=searchConfig;
+    vm.cocktailSearch=cocktailSearch;
     function buvons() {
     	vm.searchConfig.ingredient = vm.boutton;
-    	console.log(vm.searchConfig.ingredient)
+    	vm.cocktailSearch.getCocktails();
     }
     
    
   }
  
 
-  FinalCtrl.$inject = ['$location','searchConfig'];
+  FinalCtrl.$inject = ['$location','searchConfig','cocktailSearch'];
 
   angular.module('daproject')
     .controller('FinalCtrl', FinalCtrl);
