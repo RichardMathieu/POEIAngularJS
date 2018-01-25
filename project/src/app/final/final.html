@@ -1,0 +1,12 @@
+<div class="hauteur">
+	<input ng-model="final.boutton" >
+	<button ng-click="final.buvons()">Buvons!</button>
+</div>
+<div class="ingredient">{{final.searchConfig.ingredient}}</div>
+<ul>
+	<li ng-repeat="cocktail in final.cocktailSearch.cocktailList"><cocktail cocktail-element="cocktail"></cocktail></li>
+</ul>
+
+
+
+

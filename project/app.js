@@ -38,7 +38,18 @@
         controller: 'MoreCtrl',
         controllerAs: 'more',
       })
-      
+       $routeProvider
+      .when('/final', {
+        templateUrl: 'src/app/final/final.html',
+        controller: 'FinalCtrl',
+        controllerAs: 'final',
+      })
+      $routeProvider
+      .when('/cocktailDetail', {
+        templateUrl: 'src/app/cocktailDetail/cocktailDetail.html',
+        controller: 'cockDtlCtrl',
+        controllerAs: 'cockDtl',
+      })
       .otherwise({redirectTo:'/'});
   }
 
