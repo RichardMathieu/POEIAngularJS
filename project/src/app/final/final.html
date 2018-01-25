@@ -3,7 +3,10 @@
 	<button ng-click="final.buvons()">Buvons!</button>
 </div>
 <div class="ingredient">{{final.searchConfig.ingredient}}</div>
+<ul>
+	<li ng-repeat="cocktail in final.cocktailSearch.cocktailList"><cocktail cocktail-element="cocktail"></cocktail></li>
+</ul>
+<cocktail cocktail-element="final.cocktailSearch.cocktailList[0]"></cocktail>
 
-<div class="bout" ng-show="exo04.meteo.isSuccess"><img src="http://openweathermap.org/img/w/{{exo04.meteo.meteoListe[0].weather[0].icon}}.png">{{exo04.meteo.meteoListe[0].main.temp}}<br>
-<button ng-click="exo04.lien()">more</button>
-</div>
+
+

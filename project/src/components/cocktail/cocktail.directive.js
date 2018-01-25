@@ -7,7 +7,7 @@
         templateUrl: 'src/components/cocktail/cocktail.html',
         restrict: 'E',
         bindToController: {
-         cocktailElement: '=',
+         cocktailElement: '='
           
         },
         scope:{},

@@ -7,7 +7,7 @@
   }
  
 
-  Exo04Ctrl.$inject = ['$location',];
+  CocktailCtrl.$inject = ['$location',];
 
   angular.module('daproject')
     .controller('CocktailCtrl', CocktailCtrl);

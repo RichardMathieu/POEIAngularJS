@@ -11,8 +11,9 @@
         return $http.get('http://www.thecocktaildb.com/api/json/v1/1/filter.php?i='+cocktailSearch.searchConfig.ingredient)
             .then(function(response){
                 console.log('Success: %o', response);
+                
+                 cocktailSearch.cocktailList = response.data.drinks;
                  
-                 cocktailSearch.cocktailList = response.drinks;
             })
             .catch(function(error){
                  cocktailSearch.cocktailList = [];
