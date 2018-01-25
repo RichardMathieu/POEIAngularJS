@@ -1,7 +1,8 @@
 <div class="hauteur">
-	<input ng-model="exo04.setting.city" >
-	<button ng-click="exo04.meteo.getMeteo()">Buvons!</button>
+	<input ng-model="final.boutton" >
+	<button ng-click="final.buvons()">Buvons!</button>
 </div>
+<div class="ingredient">{{final.searchConfig.ingredient}}</div>
 
 <div class="bout" ng-show="exo04.meteo.isSuccess"><img src="http://openweathermap.org/img/w/{{exo04.meteo.meteoListe[0].weather[0].icon}}.png">{{exo04.meteo.meteoListe[0].main.temp}}<br>
 <button ng-click="exo04.lien()">more</button>
