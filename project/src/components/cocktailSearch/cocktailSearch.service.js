@@ -30,7 +30,7 @@
             .then(function(response){
                 console.log('Success: %o', response);
                 
-                  cocktailSearch.cocktailDetail = response.drinks[0];
+                  cocktailSearch.cocktailDetail = response.data.drinks[0];
                  
             })
             .catch(function(error){
